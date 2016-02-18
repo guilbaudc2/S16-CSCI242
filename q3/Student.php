@@ -22,7 +22,7 @@ class Student {
 	*/
 	public function getName()
 	{
-		return $this->name;
+		return self::$name;
 	}
 
 	/*
@@ -32,7 +32,7 @@ class Student {
 	*/
 	public function setName($name)
 	{
-		$this->name = $name;
+		Student::$name = $name;
 	}
 
 }

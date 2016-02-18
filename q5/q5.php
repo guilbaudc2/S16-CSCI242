@@ -3,6 +3,8 @@
 /* BEGIN ANSWER SECTION */
 
 require_once("Programmer.php");
+require_once("CoolProgrammer.php");
+
 
 $regularProgrammer = new Programmer();
 echo $regularProgrammer->getGreeting();
@@ -13,5 +15,9 @@ echo $regularProgrammer->getGreeting();
 * just cooler...
 */
 
+echo "<br>";
+
+$coolProgrammer = new CoolProgrammer();
+echo $coolProgrammer->getGreeting();
 
 /* END ANSWER SECTION */

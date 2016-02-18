@@ -14,7 +14,7 @@ class Numbers {
         {
                 /* BEGIN ANSWER SECTION */
 
-
+                return self::ONE;
 
                 /* END ANSWER SECTION */
         }
