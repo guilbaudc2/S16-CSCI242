@@ -15,7 +15,7 @@ class SimpleAccount
 	
 	public function deposit($amount)
 	{
-		$this->balance = $amount;
+		$this->balance /*+*/= $amount; //ans: $this->balance += $amount;
 	}
 	
 	public function withdrawal($amount)

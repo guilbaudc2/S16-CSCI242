@@ -4,7 +4,7 @@
 
 class Student {
 
-	private static $name = "";
+	private static $name = ""; //ans: private $name = "";
 
 	/*
 	* Accepts: Nothing
@@ -22,7 +22,7 @@ class Student {
 	*/
 	public function getName()
 	{
-		return self::$name;
+		return self::$name;  //return $this->name;
 	}
 
 	/*
@@ -32,7 +32,7 @@ class Student {
 	*/
 	public function setName($name)
 	{
-		Student::$name = $name;
+		Student::$name = $name; //$this->name = $name;
 	}
 
 }

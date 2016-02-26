@@ -3,7 +3,7 @@
 
 require_once("Mammal.php");
 
-class Human{
+class Human{ //ans: class Human extends Mammal {
     
     public function __construct()
     {

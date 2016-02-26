@@ -8,6 +8,9 @@ class CoolProgrammer extends Programmer{
     public function __construct()
     {
         //constructor stuff.
+        
+        
+        //ans: parent::__construct();
     }
     
     

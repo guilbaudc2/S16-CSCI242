@@ -24,3 +24,9 @@
     </li>
 
 </ol>
+
+<?php
+
+//Interfaces: must be implemented.
+
+//Interfaces: ex: you can name several things but those things are not related to each other. 
