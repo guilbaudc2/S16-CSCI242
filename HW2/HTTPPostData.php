@@ -11,10 +11,12 @@ class HTTPPostData extends HTTPData {
     
     public function getKey($key)
     {
-        //returns the $key value in the $_POST array
-         $this->key = $key;
-        
-        return $_POST[$this->key];
+        //returns the $key value in the $_POST array if it is in the array
+       
+        if(isset($_POST[$key]))
+        {
+        return $_POST[$key];
+        }
     }
     
 }

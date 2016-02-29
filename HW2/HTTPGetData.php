@@ -11,10 +11,11 @@ class HTTPGetData extends HTTPData {
     
     public function getKey($key)
     {
-        //returns the $key value in the $_GET array
+        //returns the $key value in the $_GET array if it is in the array
         
-        $this->key = $key;
-        
-        return $_GET[$this->key];
+        if(isset($_GET[$key]))
+        {
+        return $_GET[$key];
+        }
     }
 }
