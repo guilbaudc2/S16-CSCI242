@@ -1,7 +1,6 @@
 <?php
-require_once("User.php");
 
-class Profile extends User{
+class Profile {
     
 public $firstName;
 public $lastName;
@@ -9,7 +8,7 @@ public $emailAddress;
 
     public function __construct()
     {
- 
+        //creates and runs the constructor
     }
 
     public function getFirstName()
