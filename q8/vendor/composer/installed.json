@@ -1,0 +1,53 @@
+[
+    {
+        "name": "ujjwal/currency-converter",
+        "version": "2.2.1",
+        "version_normalized": "2.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ojhaujjwal/currency-converter-php.git",
+            "reference": "67b4091f70b485dd07fb974850f291061bff61e1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ojhaujjwal/currency-converter-php/zipball/67b4091f70b485dd07fb974850f291061bff61e1",
+            "reference": "67b4091f70b485dd07fb974850f291061bff61e1",
+            "shasum": ""
+        },
+        "require-dev": {
+            "ext-curl": "*",
+            "phpunit/phpunit": "4.*",
+            "zendframework/zend-cache": "2.*"
+        },
+        "suggest": {
+            "ext-curl": "Using the rate provider for gettting the rate from yahoo using curl extension",
+            "zendframework/zend-cache": "To use Zend Cache component for caching"
+        },
+        "time": "2015-03-21 05:09:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "CurrencyConverter\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "ojhaujjwal",
+                "email": "bring2uo@gmail.com"
+            }
+        ],
+        "description": "Currency Converter Class with features of caching and identifying currency from country Code",
+        "keywords": [
+            "converter",
+            "currency",
+            "currency-converter",
+            "exchange-rates",
+            "money"
+        ]
+    }
+]

@@ -19,5 +19,8 @@ $user->setLanguage("English");
 //and then echo it out here. Don't forget to pass
 //the user to the template, or edit the template!
 
+$output = $twig->render("index.html", array("user" => array("Name" => $user->getName("Andrew Besmer"), "Username" => $user->getUsername("besmera"), "Language" => $user->getLanguage("English"))));
+
+echo $output;
 
 //--------------------------------------------

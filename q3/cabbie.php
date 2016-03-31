@@ -15,7 +15,7 @@ class Chevy implements Drivable
 
 class Cabbie
 {
-     public static function navigate($car)
+     public static function navigate(Drivable $car)
      {
           $car->drive();
      }

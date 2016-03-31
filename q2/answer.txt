@@ -1,1 +1,4 @@
-
+Namespaces are way for people to reuse code and to use classes that may have the same name but do different things. For example, I might be 
+creating a class with the name Car. If I wanted to use someone else's Car class, I would get an error that states you cannot redefine a class
+(very much like you would get with functions). Instead, I can put my Car class in a specific namespace, for example "Guilbaud", and if someone
+wants to use it, they would call it with use Guilbaud\Car.php.

@@ -1,3 +1,20 @@
-{# Remove these comments after reading.  #}
-{# Don't forget to extend the base.html template #}
-{# Be sure you output the name, username, and language  #}
+{% extends "base.html" %}
+
+{% block title %} User Information{% endblock %}
+
+{% block body %}
+    
+    <h1>User's Information:</h1>
+    
+    <ul>
+                
+    {% for key, info in user %}
+    
+    <li><strong>{{ key }}: </strong> {{ info }}</li>
+            
+    {% endfor %}
+    
+    </ul>
+   
+{% endblock %}
+
