@@ -2,11 +2,13 @@
 
 session_start();
 
-if(!isset($_SESSION["account"]))
+if(!isset($_SESSION["customer"]))
 {
 	header("Location: index.php");
 	
 }
+
+$customer = $_SESSION["customer"];
 
 require("vendor/autoload.php");
 
@@ -22,24 +24,35 @@ use Guilbaud\NotCustomersAccountException;
 use \Exception;
 
 
- $customer = $_SESSION["account"];
+ 
 
 if($_SERVER["REQUEST_METHOD"] == "GET")
 {
 ?>
         <form method="POST" action="accountpage.php">
-            <button type="submit" name="bankAccount">Create Bank Account</button>
+            <table>
+				  <tr>
+						<td>Deposit Amount <input type="text" name="depositAmt"></td>
+				  </tr>
+		    </table>
+            <input type="submit" name="bankAccount">Create Bank Account</input>
         </form>
-        
-<?php
-} else if($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    
+<?php	
+		} else if($_SERVER["REQUEST_METHOD"] == "POST")
+		{
+	$deposit = $_POST["depositAmt"];
+						
     $bankAccount1 = $_POST["bankAccount"];
     $bankAccount1 = new BankAccount();
+    $bankAccount1->deposit($deposit);
+    
+    
     
     $customer->addAccount($bankAccount1);
-    $_SESSION["account"] = $customer;
+   
+   var_dump($customer);
+   
+   // $_SESSION["account"] = $customer;
     
     //$bankAccount
 /*try {

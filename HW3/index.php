@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
    $customer = new Customer();
    $bankAccount = new BankAccount();
    $customer->addAccount($bankAccount);
-   $_SESSION["account"] = $customer;
+   $_SESSION["customer"] = $customer;
 
     header("Location: accountpage.php");
     
