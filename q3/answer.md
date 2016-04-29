@@ -3,7 +3,7 @@
 1 <?php
 2 require_once('Twig/Autoloader.php');
 3 
-4 /** Twig setup */
+4 /* Twig setup */
 5 Twig_Autoloader::register();
 6 
 7 $loader = new Twig_Loader_Filesystem('templates');
