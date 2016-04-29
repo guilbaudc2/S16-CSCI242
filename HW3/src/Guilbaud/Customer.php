@@ -44,6 +44,12 @@ class Customer {
         return $this->accounts;
     }
     
+    public function getAccount($account)
+    {
+        //returns the names of all the user's accounts
+        return $this->accounts[$account];
+    }
+    
     public function getBalanceOfAllAccounts()
     {
         //returns the balance of all the user's accounts
