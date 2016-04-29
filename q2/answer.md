@@ -1,0 +1,3 @@
+2) What is the purpose of a router in MVC and how does a MVC router on the Apache web server work?
+
+In MVC, the router the The business logic behind how our scripts work. For example, the router would be used for the actual logic involved in saving information to a database, accessing the database, if I have access to certain pages, how to handle requests for accessing a certain page. It can also use a website's url to create a more dynamic request. The MVC router on the Apache web server is found all of our .php documents.

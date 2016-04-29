@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>CompanyInformationBundle list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Companyname</th>
+                <th>Phonenumber</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for companyInformationBundle in companyInformationBundles %}
+            <tr>
+                <td><a href="{{ path('companyinformation_show', { 'id': companyInformationBundle.id }) }}">{{ companyInformationBundle.id }}</a></td>
+                <td>{{ companyInformationBundle.companyName }}</td>
+                <td>{{ companyInformationBundle.phoneNumber }}</td>
+                <td>{{ companyInformationBundle.description }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('companyinformation_show', { 'id': companyInformationBundle.id }) }}">show</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

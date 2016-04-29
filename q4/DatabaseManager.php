@@ -1,17 +1,21 @@
 <?php
 
 class DatabaseManager {
-     private $db = NULL;
+     private static $db = NULL;
 
      public function __construct() {
           $conn = "My Connection";
           //imagine $conn contains a real db connection
-          $this->db = $conn;
+          self::$db = $conn;
       }
 
       public function getDb()
       {
-           return $this->db;
+           if (self::$db == null)
+        {
+            self::$db = new DatabaseManager();
+        }     
+           return self::$db;
       }
 
       public function query($query) {
@@ -21,7 +25,7 @@ class DatabaseManager {
 
 }
 
-$db = new DatabaseManager();
-echo $db->getDb();
+$db = DatabaseManager::getDb();
+$db->getDb();
 echo $db->query("Some SQL");
 

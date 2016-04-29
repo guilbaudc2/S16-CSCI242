@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>CompanyInformationBundle</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ companyInformationBundle.id }}</td>
+            </tr>
+            <tr>
+                <th>Companyname</th>
+                <td>{{ companyInformationBundle.companyName }}</td>
+            </tr>
+            <tr>
+                <th>Phonenumber</th>
+                <td>{{ companyInformationBundle.phoneNumber }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ companyInformationBundle.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('companyinformation_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
